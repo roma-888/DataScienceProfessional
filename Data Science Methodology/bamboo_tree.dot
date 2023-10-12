@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<node &#35;0<br/>olive_oil &le; 0.5<br/>samples = 44387<br/>value = [40150, 442, 225, 3250, 320]<br/>class = american>, fillcolor="#e88e4d"] ;
+1 [label=<node &#35;1<br/>soy_sauce &le; 0.5<br/>samples = 36896<br/>value = [34825, 432, 54, 1280, 305]<br/>class = american>, fillcolor="#e78845"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<node &#35;2<br/>parmesan_cheese &le; 0.5<br/>samples = 35100<br/>value = [33503, 135, 54, 1277, 131]<br/>class = american>, fillcolor="#e68742"] ;
+1 -> 2 ;
+3 [label=<node &#35;3<br/>samples = 33527<br/>value = [32271, 134, 53, 938, 131]<br/>class = american>, fillcolor="#e68641"] ;
+2 -> 3 ;
+4 [label=<node &#35;4<br/>samples = 1573<br/>value = [1232, 1, 1, 339, 0]<br/>class = american>, fillcolor="#eca470"] ;
+2 -> 4 ;
+5 [label=<node &#35;5<br/>wine &le; 0.5<br/>samples = 1796<br/>value = [1322, 297, 0, 3, 174]<br/>class = american>, fillcolor="#eda978"] ;
+1 -> 5 ;
+6 [label=<node &#35;6<br/>samples = 1632<br/>value = [1274, 230, 0, 1, 127]<br/>class = american>, fillcolor="#eca16c"] ;
+5 -> 6 ;
+7 [label=<node &#35;7<br/>samples = 164<br/>value = [48, 67, 0, 2, 47]<br/>class = chinese>, fillcolor="#e9fbdf"] ;
+5 -> 7 ;
+8 [label=<node &#35;8<br/>parmesan_cheese &le; 0.5<br/>samples = 7491<br/>value = [5325, 10, 171, 1970, 15]<br/>class = american>, fillcolor="#efb287"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<node &#35;9<br/>macaroni &le; 0.5<br/>samples = 6131<br/>value = [4618, 9, 164, 1325, 15]<br/>class = american>, fillcolor="#eda977"] ;
+8 -> 9 ;
+10 [label=<node &#35;10<br/>samples = 5349<br/>value = [4182, 8, 148, 996, 15]<br/>class = american>, fillcolor="#eca36e"] ;
+9 -> 10 ;
+11 [label=<node &#35;11<br/>samples = 782<br/>value = [436, 1, 16, 329, 0]<br/>class = american>, fillcolor="#f9e1d0"] ;
+9 -> 11 ;
+12 [label=<node &#35;12<br/>vinegar &le; 0.5<br/>samples = 1360<br/>value = [707, 1, 7, 645, 0]<br/>class = american>, fillcolor="#fdf4ee"] ;
+8 -> 12 ;
+13 [label=<node &#35;13<br/>samples = 1205<br/>value = [592, 1, 7, 605, 0]<br/>class = italian>, fillcolor="#fbfbfe"] ;
+12 -> 13 ;
+14 [label=<node &#35;14<br/>samples = 155<br/>value = [115, 0, 0, 40, 0]<br/>class = american>, fillcolor="#eead7e"] ;
+12 -> 14 ;
+}
